@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentPageViewer>
+            <FlowDocument>
+                <Paragraph FontSize="20">Добро пожаловать в
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock>           
+                            <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F" RequestNavigate="Hyperlink_RequestNavigate">
+                                Википедию,
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock>
+                            <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82" RequestNavigate="Hyperlink_RequestNavigate1">
+                                свободную энциклопедию,
+                            </Hyperlink>
+                            которую
+                        </TextBlock>
+                        <TextBlock>
+                            <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8E" RequestNavigate="Hyperlink_RequestNavigate2">
+                                 может редактировать каждый.
+                            </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </Paragraph>
+                <Paragraph>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock>
+                            Сейчас в Википедии
+                            <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0" RequestNavigate="Hyperlink_RequestNavigate4">
+                                 1 714 770 статей 
+                            </Hyperlink>
+                            на
+                        </TextBlock>
+                        <TextBlock>
+                            <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" RequestNavigate="Hyperlink_RequestNavigate5">
+                                русском языке.
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock>
+                            <Hyperlink>
+                                <Button Margin="100 100 100 100" HorizontalAlignment="Right" Width="200" Height="20">
+                                    Создать статью
+                                </Button>
+                                 <Button Margin="100 100 100 100" HorizontalAlignment="Right" Width="200" Height="20">
+                                    Создать статью
+                                </Button>
+                            </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+    </Grid>
+</Window>
